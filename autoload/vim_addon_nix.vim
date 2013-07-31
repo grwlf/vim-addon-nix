@@ -79,7 +79,7 @@ endf
 
 fun! vim_addon_nix#NixRetagAllPackages()
   for d in vim_addon_nix#DirsToTag()
-    call vcs_checkouts#ExecIndir([{'d': d, 'c': s:c.tag_command.' .'}])
+    call vam#utils#ExecIndir([{'d': d, 'c': s:c.tag_command.' .'}])
   endfor
 endf
 
